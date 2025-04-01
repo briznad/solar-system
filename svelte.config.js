@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static'
+import vercelAdapter from '@sveltejs/adapter-vercel'
 import { sveltePreprocess } from "svelte-preprocess";
 
 
@@ -6,12 +6,7 @@ import { sveltePreprocess } from "svelte-preprocess";
 const config = {
 	preprocess : sveltePreprocess(),
 	kit        : {
-		adapter : adapter({
-			pages       : 'build',
-			assets      : 'build',
-			fallback    : 'index.html',
-			precompress : false,
-		}),
+		adapter : vercelAdapter({}),
 		alias   : {
 			// file path shortcuts
 			'$actions'    : './src/lib/actions',
