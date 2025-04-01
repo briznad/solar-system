@@ -1,6 +1,6 @@
 {
-  "name": "Ionic SvelteKit",
-  "short_name": "Ionic SvelteKit",
+  "name": "Solar System",
+  "short_name": "Solar System",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
